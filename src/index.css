@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Blacknorthdemo';
+        src: url('/fonts/Blacknorthdemo.otf') format('opentype');
+        /* Adjust path based on where the font is stored */
+        font-weight: normal;
+        font-style: normal;
+    }
+
+
+}
