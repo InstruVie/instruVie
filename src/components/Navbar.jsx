@@ -24,7 +24,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <nav className="absolute top-16 lg:top-12 right-5  text-white md:h-16 z-50">
+            <nav className="absolute top-10 lg:top-12 right-10  text-white md:h-16 z-50">
 
                 {/* Mobile Navbar Button */}
                 <div className="flex  justify-between items-center p-4">

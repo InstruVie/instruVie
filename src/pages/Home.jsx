@@ -95,7 +95,7 @@ function Home() {
             {/* Home section */}
             <section id="home" className="relative min-h-screen flex flex-col justify-center items-center text-center text-white px-4 overflow-x-hidden"> {/* Added overflow-x-hidden */}
                 {/* Top Left Logo */}
-                <div className="absolute top-14 left-7 p-2">
+                <div className="absolute top-7 lg:top-14 left-7 p-2">
                     <img src="/Logos/sai.png" alt="Left Logo" className="w-20 h-auto" />
                 </div>
 
@@ -104,7 +104,7 @@ function Home() {
                     <img src="/Logos/footer.png" alt="Right Logo" className="w-20 h-auto" />
                 </div> */}
                 <div className='w-[100%] bg-black/50 p-10'>
-                    <h1 className={`text-3xl font-bold ${styles.font}`}>Sri Sairam Engineering College</h1>
+                    <h1 className={`text-xl lg:text-3xl font-bold ${styles.font}`}>Sri Sairam Engineering College</h1>
                     <h3 className={`text-xl mt-2 ${styles.font}`}>presents</h3>
                     <h3 className={`text-xl mt-2 ${styles.font}`}>Department of EI&CE</h3>
 
