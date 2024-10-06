@@ -57,7 +57,7 @@ function Home() {
     const videoRef = useRef(null);
 
     useEffect(() => {
-        const symposiumDate = new Date('2024-10-25T00:00:00').getTime();
+        const symposiumDate = new Date('2024-10-25T09:00:00').getTime();
 
         const countdown = setInterval(() => {
             const now = new Date().getTime();
@@ -95,73 +95,78 @@ function Home() {
             {/* Home section */}
             <section id="home" className="relative min-h-screen flex flex-col justify-center items-center text-center text-white px-4 overflow-x-hidden"> {/* Added overflow-x-hidden */}
                 {/* Top Left Logo */}
-                <div className="absolute top-7 left-3 p-2">
+                <div className="absolute top-14 left-7 p-2">
                     <img src="/Logos/sai.png" alt="Left Logo" className="w-20 h-auto" />
                 </div>
 
                 {/* Top Right Logo */}
-                <div className="absolute top-3 right-3 p-2">
+                {/* <div className="absolute top- right-3 p-2">
                     <img src="/Logos/footer.png" alt="Right Logo" className="w-20 h-auto" />
-                </div>
+                </div> */}
+                <div className='w-[100%] bg-black/50 p-10'>
+                    <h1 className={`text-3xl font-bold ${styles.font}`}>Sri Sairam Engineering College</h1>
+                    <h3 className={`text-xl mt-2 ${styles.font}`}>presents</h3>
+                    <h3 className={`text-xl mt-2 ${styles.font}`}>Department of EI&CE</h3>
 
-                <h1 className={`text-3xl font-bold ${styles.font}`}>Sri Sairam Engineering College</h1>
-                <h3 className={`text-xl mt-2 ${styles.font}`}>presents</h3>
-                <img src="/Logos/herosection.png" alt="Instruvie Logo" className="w-auto h-48 mt-4" />
-
-                {/* Countdown Timer */}
-                <div className="mt-6 text-xl font-semibold">
-                    <p className={`${styles.font}`}>Symposium starts in:</p>
-                    <div className="flex justify-center space-x-4 mt-2">
-                        <div className="flex flex-col items-center">
-                            <span className={`text-4xl ${styles.font}`}>{timeLeft.days}</span>
-                            <span className={`${styles.font}`}>Days</span>
-                        </div>
-                        <div className="flex flex-col items-center">
-                            <span className={`text-4xl ${styles.font} `}>{timeLeft.hours}</span>
-                            <span className={`${styles.font}`}>Hours</span>
-                        </div>
-                        <div className="flex flex-col items-center">
-                            <span className={`text-4xl ${styles.font} `}>{timeLeft.minutes}</span>
-                            <span className={`${styles.font}`}>Minutes</span>
-                        </div>
-                        {/* Display seconds only on medium screens and above */}
-                        <div className="hidden md:flex flex-col items-center">
-                            <span className={`text-4xl ${styles.font} `}>{timeLeft.seconds}</span>
-                            <span className={`${styles.font}`}>Seconds</span>
+                    {/* <img src="/Logos/herosection.png" alt="Instruvie Logo" className="w-auto h-48 mt-4" /> */}
+                    <h1 className={`${styles.font1} text-[#ff9442] `}>instruVie</h1>
+                    {/* Countdown Timer */}
+                    <div className="mt-6 text-xl font-semibold">
+                        <p className={`${styles.font}`}>Symposium starts in:</p>
+                        <div className="flex justify-center space-x-4 mt-2">
+                            <div className="flex flex-col items-center">
+                                <span className={`text-4xl ${styles.font}`}>{timeLeft.days}</span>
+                                <span className={`${styles.font}`}>Days</span>
+                            </div>
+                            <div className="flex flex-col items-center">
+                                <span className={`text-4xl ${styles.font} `}>{timeLeft.hours}</span>
+                                <span className={`${styles.font}`}>Hours</span>
+                            </div>
+                            <div className="flex flex-col items-center">
+                                <span className={`text-4xl ${styles.font} `}>{timeLeft.minutes}</span>
+                                <span className={`${styles.font}`}>Minutes</span>
+                            </div>
+                            {/* Display seconds only on medium screens and above */}
+                            <div className="hidden md:flex flex-col items-center">
+                                <span className={`text-4xl ${styles.font} `}>{timeLeft.seconds}</span>
+                                <span className={`${styles.font}`}>Seconds</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* Additional Content Section */}
-            <section id='about' className="flex flex-col md:flex-row items-center justify-center md:justify-between p-4 overflow-x-hidden"> {/* Added overflow-x-hidden */}
+            <section id='about' className="flex flex-col md:flex-row items-center justify-center md:justify-between p-10 overflow-x-hidden"> {/* Added overflow-x-hidden */}
                 {/* Left Image */}
-                <div className="md:w-1/2 w-full flex justify-center mb-4 md:mb-0">
-                    <img
-                        src="Background/group.jpg"
-                        alt="Instruvie2k24"
-                        className="w-full h-auto max-w-sm"
-                    />
-                </div>
+                <div className='flex flex-col md:flex-row items-center justify-center lg:gap-28'>
+                    <div className=" flex justify-center mb-4 md:mb-0">
+                        <img
+                            src="Background/group.jpg"
+                            alt="Instruvie2k24"
+                            className="w-full h-auto max-w-sm"
+                        />
+                    </div>
 
-                {/* Right Text Content */}
-                <div className="md:w-1/2 w-full text-white">
-                    <h2 className="text-3xl font-bold mb-4">About Instruvie2k24</h2>
-                    <p className={`text-lg text-justify leading-relaxed ${styles.font}`}>
-                        Instruvie2k24 is an annual symposium organized by the Department of
-                        Electronic Instrumentation and Control Engineering at Sri Sairam
-                        Engineering College. It is an event that brings together the brightest
-                        minds in the industry to showcase their skills, share knowledge, and
-                        compete in various technical events. Join us for an experience of
-                        innovation, collaboration, and learning.
-                    </p>
+                    {/* Right Text Content */}
+                    <div className=" lg:w-[50%] text-white">
+                        <h2 className="text-3xl text-[#ff9442] font-bold mb-4">About Instruvie2k24</h2>
+                        <p className={`text-lg text-justify leading-relaxed ${styles.font}`}>
+                            Instruvie2k24 is an annual symposium organized by the Department of
+                            Electronic Instrumentation and Control Engineering at Sri Sairam
+                            Engineering College. It is an event that brings together the brightest
+                            minds in the industry to showcase their skills, share knowledge, and
+                            compete in various technical events. Join us for an experience of
+                            innovation, collaboration, and learning.
+                        </p>
+                    </div>
                 </div>
             </section>
 
             {/* Promo Video Section */}
-            <section className="relative w-full flex flex-col items-center p-4 overflow-x-hidden">
+            <section className="relative w-full flex flex-col items-center p-10 p-4 overflow-x-hidden">
                 {/* Title */}
-                <h2 className="text-white text-4xl font-bold mb-4 text-left w-full pl-2">
+                <h2 className="text-[#ff9442]  text-4xl font-bold mb-4 text-center w-full pl-2">
                     Promo Video
                 </h2>
 
@@ -188,7 +193,7 @@ function Home() {
 
 
             {/* Cards Section */}
-            <section className="grid grid-cols-1 md:grid-cols-3 gap-6 p-4 overflow-x-hidden"> {/* Added overflow-x-hidden */}
+            <section className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 py-10 overflow-x-hidden"> {/* Added overflow-x-hidden */}
                 <Card
                     title="Our Mission"
                     content="To Provide excellence in the field of Instrumentation and Control Engineering by enhancing the students Knowledge in both theoretical and applied foundations."
@@ -205,7 +210,7 @@ function Home() {
 
             {/* Events Section */}
             <section id='events' className="flex flex-col p-4 overflow-x-hidden"> {/* Added overflow-x-hidden */}
-                <h2 className="text-white text-4xl font-bold mb-8 text-left w-full pl-4">EVENTS</h2> {/* Left-aligned heading */}
+                <h2 className="text-[#ff9442]  text-4xl font-bold mb-8 text-center w-full pl-4">EVENTS</h2> {/* Left-aligned heading */}
                 <h2 className="text-white text-3xl font-bold mb-8 text-center w-full pl-4">TECHINICAL EVENTS</h2> {/* Left-aligned heading */}
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-28 mx-auto"> {/* Center the grid */}
@@ -222,6 +227,10 @@ function Home() {
                         logo="/Logos/Mastermind.png" // Path to your logo image
                         onRegister={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSepeyeFKHOEpkL4T0EanYm7m5ZH9QwuQP6hoh4i_M9y480EsQ/viewform?usp=sf_link', '_blank')}
                     />
+                </div>
+                <h2 className="text-white text-3xl font-bold my-8 text-center w-full pl-4">NON TECHNICAL</h2> {/* Left-aligned heading */}
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-28 mx-auto">
                     <EventCard
                         logo="/Logos/bargainbash.png" // Path to your logo image
                         onRegister={() => window.open('https://docs.google.com/forms/d/1Esb4b5tPJfR7OR_aGE58YYeaIfz3mjGdmwNBW4GhO58/edit?usp=drivesdk', '_blank')}
@@ -243,8 +252,8 @@ function Home() {
                     />
                 </div>
             </section>
-            <section className="flex flex-col items-center p-4">
-                <h2 className="text-3xl text-white font-bold text-center mb-6">DISTINGUISHED PATRONS</h2>
+            <section className="flex flex-col items-center px-4 my-20">
+                <h2 className="text-3xl text-[#ff9442]  font-bold text-center mb-6">DISTINGUISHED PATRONS</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {staffMembers.map((staff, index) => (
                         <StaffCard
@@ -257,8 +266,8 @@ function Home() {
                     ))}
                 </div>
             </section>
-            <section className="flex flex-col items-center p-4">
-                <h2 className="text-3xl font-bold text-white text-center mb-6">ORGANIZING COMMITTEE</h2>
+            <section className="flex flex-col items-center px-4 pb-10">
+                <h2 className="text-3xl font-bold text-[#ff9442]  text-center mb-6">ORGANIZING COMMITTEE</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {students.map((student, index) => (
                         <StudentCard

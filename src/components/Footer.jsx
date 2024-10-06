@@ -43,7 +43,6 @@ const Footer = () => {
 
             {/* Copyright Section */}
             <div className="text-center">
-                <p className="mb-2">© InstruVie 2024</p>
                 <p>Follow Us On</p>
                 <div className="flex justify-center space-x-4 mt-2">
                     <a href="https://www.instagram.com/instruvie2k24/profilecard/?igsh=OXQ1MW53Y3pnMjNu" target="_blank" rel="noopener noreferrer">
@@ -53,6 +52,8 @@ const Footer = () => {
                         <FaLinkedin size={30} />
                     </a>
                 </div>
+                <p className="mt-2">© InstruVie 2024 | All right reserved | Sri Sairam Engineering College</p>
+
             </div>
         </footer>
     );

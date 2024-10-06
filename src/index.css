@@ -11,5 +11,12 @@
         font-style: normal;
     }
 
+    @font-face {
+        font-family: 'fridie';
+        src: url('/fonts/fridie.otf') format('opentype');
+        /* Adjust path based on where the font is stored */
+        font-weight: normal;
+        font-style: normal;
+    }
 
 }

@@ -24,18 +24,10 @@ const Navbar = () => {
 
     return (
         <div>
-            <nav className="absolute bottom-0 w-full bg-gray-800/80 text-white md:h-16 z-50">
-                {/* Desktop Navbar */}
-                <div className="hidden md:flex justify-start items-center h-full pl-4 space-x-8">
-                    <a href="#home" className="hover:text-gray-400" onClick={(e) => scrollToSection(e, 'home')}>Home</a>
-                    <a href="#about" className="hover:text-gray-400" onClick={(e) => scrollToSection(e, 'about')}>About</a>
-                    <a href="#events" className="hover:text-gray-400" onClick={(e) => scrollToSection(e, 'events')}>Event</a>
-                    <a href="#contact" className="hover:text-gray-400" onClick={(e) => scrollToSection(e, 'contact')}>Contact Us</a>
-                </div>
+            <nav className="absolute top-16 lg:top-12 right-5  text-white md:h-16 z-50">
 
                 {/* Mobile Navbar Button */}
-                <div className="flex md:hidden justify-between items-center p-4">
-                    <div className="text-lg font-bold">Menu</div>
+                <div className="flex  justify-between items-center p-4">
                     <button
                         className="text-3xl focus:outline-none"
                         onClick={() => setIsOpen(!isOpen)}
@@ -47,7 +39,7 @@ const Navbar = () => {
                 {/* Mobile Fullscreen Menu */}
                 <div
                     className={`fixed inset-0 bg-gray-800 text-white flex flex-col justify-start items-start p-8 space-y-8 transform transition-transform duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-full'
-                        } md:hidden z-50`}
+                        }  z-50`}
                 >
                     <button
                         className="text-3xl self-end focus:outline-none"

@@ -4,3 +4,21 @@
     font-style: normal;
     letter-spacing: 1px;
 }
+
+.font1 {
+    font-family: "fridie";
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 7em;
+}
+
+@media (max-width:500px) {
+    .font1 {
+        font-family: "fridie";
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: 1px;
+        font-size: 5em;
+    }
+}
