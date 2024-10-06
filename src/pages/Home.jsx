@@ -164,13 +164,13 @@ function Home() {
             </section>
 
             {/* Promo Video Section */}
-            <section className="relative w-full flex flex-col items-center p-10 p-4 overflow-x-hidden">
-                {/* Title */}
+            {/* <section className="relative w-full flex flex-col items-center p-10 p-4 overflow-x-hidden">
+                {/* Title 
                 <h2 className="text-[#ff9442]  text-4xl font-bold mb-4 text-center w-full pl-2">
                     Promo Video
                 </h2>
 
-                {/* Video */}
+                {/* Video 
                 <video
                     ref={videoRef}
                     className="w-full h-auto max-w-[90%] sm:max-w-[80%] aspect-[16/9] object-cover"
@@ -179,7 +179,7 @@ function Home() {
                     Your browser does not support the video tag.
                 </video>
 
-                {/* Play/Pause Button Container */}
+                {/* Play/Pause Button Container 
                 <div className="w-full flex justify-center mt-4 sm:absolute sm:bottom-10 sm:left-1/2 sm:transform sm:-translate-x-1/2">
                     <button
                         onClick={togglePlayPause}
@@ -188,7 +188,7 @@ function Home() {
                         {videoRef.current && !videoRef.current.paused ? 'Pause' : 'Play'}
                     </button>
                 </div>
-            </section>
+            </section> */}
 
 
 
