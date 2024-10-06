@@ -159,24 +159,33 @@ function Home() {
             </section>
 
             {/* Promo Video Section */}
-            <section className="relative w-full flex flex-col items-center p-4 overflow-x-hidden"> {/* Added overflow-x-hidden */}
-                <h2 className="text-white text-4xl font-bold mb-4 text-left w-full pl-2">Promo Video</h2>
+            <section className="relative w-full flex flex-col items-center p-4 overflow-x-hidden">
+                {/* Title */}
+                <h2 className="text-white text-4xl font-bold mb-4 text-left w-full pl-2">
+                    Promo Video
+                </h2>
+
+                {/* Video */}
                 <video
                     ref={videoRef}
-                    className="w-full h-auto max-w-[80%] aspect-[16/9] object-cover" // Maintain aspect ratio
+                    className="w-full h-auto max-w-[90%] sm:max-w-[80%] aspect-[16/9] object-cover"
                 >
                     <source src="/Background/ICE COMING SOON.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
 
-                {/* Play/Pause Button */}
-                <button
-                    onClick={togglePlayPause}
-                    className="absolute bottom-10 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white py-2 px-4 rounded"
-                >
-                    {videoRef.current && !videoRef.current.paused ? 'Pause' : 'Play'}
-                </button>
+                {/* Play/Pause Button Container */}
+                <div className="w-full flex justify-center mt-4 sm:absolute sm:bottom-10 sm:left-1/2 sm:transform sm:-translate-x-1/2">
+                    <button
+                        onClick={togglePlayPause}
+                        className="bg-gray-800 text-white py-3 px-6 rounded-lg text-lg sm:text-base"
+                    >
+                        {videoRef.current && !videoRef.current.paused ? 'Pause' : 'Play'}
+                    </button>
+                </div>
             </section>
+
+
 
             {/* Cards Section */}
             <section className="grid grid-cols-1 md:grid-cols-3 gap-6 p-4 overflow-x-hidden"> {/* Added overflow-x-hidden */}
