@@ -103,7 +103,7 @@ function Home() {
                 {/* <div className="absolute top- right-3 p-2">
                     <img src="/Logos/footer.png" alt="Right Logo" className="w-20 h-auto" />
                 </div> */}
-                <div className='w-[100%] bg-black/50 p-10'>
+                <div className='w-[100%] bg-black/50 rounded-xl p-10'>
                     <h1 className={`text-xl lg:text-3xl font-bold ${styles.font}`}>Sri Sairam Engineering College</h1>
                     <h3 className={`text-xl mt-2 ${styles.font}`}>presents</h3>
                     <h3 className={`text-xl mt-2 ${styles.font}`}>Department of EI&CE</h3>
@@ -247,7 +247,7 @@ function Home() {
                 <h2 className="text-white text-3xl font-bold mt-8 text-center w-full pl-4">WORKSHOP</h2> {/* Left-aligned heading */}
                 <div className="flex justify-center mt-8 mx-auto"> {/* Center the grid */}
                     <EventCard
-                        logo="/Logos/PITCHFEST.png" // Path to your logo image
+                        logo="/Logos/workshop.png" // Path to your logo image
                         onRegister={() => window.open('https://forms.gle/4WnDwqVeSj2WREXZA', '_blank')}
                     />
                 </div>
